@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Sign Recognition System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">Traffic Sign Recognition System</h1>
+        <div id="content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Drive Safely with Our Traffic Sign Recognition System</h2>
+            <p>Experience the latest in road safety technology.</p>
+            <a href="index2.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Our system utilizes advanced machine learning algorithms to analyze camera input and identify traffic signs. It then provides real-time alerts to the driver, ensuring safe navigation.</p>
+        <ul>
+        A traffic sign recognition system using YOLOv5 likely operates through a series of steps:
+
+            <li>Data Collection and Preprocessing: The system first collects a large dataset of images containing various traffic signs. These images are then preprocessed to standardize their size, brightness, and orientation, ensuring consistency across the dataset.</li>
+
+            <li>Training the Model: YOLOv5, being a deep learning object detection model, is trained on the preprocessed dataset. During training, the model learns to detect and classify traffic signs by analyzing features such as shapes, colors, and symbols. The training process involves adjusting the model's parameters to minimize the difference between its predictions and the ground truth labels of the training data.</li>
+
+            <li>Integration with Camera Feed: Once trained, the YOLOv5 model is integrated into the traffic sign recognition system, which typically involves deploying it on a device capable of processing real-time video feeds, such as a camera-equipped vehicle or a traffic monitoring system.</li>
+
+            <li> Object Detection: The system continuously captures frames from the camera feed and feeds them into the YOLOv5 model for object detection. YOLOv5 processes each frame and outputs bounding boxes around detected objects, along with their corresponding class labels and confidence scores.</li>
+            <li>Traffic Sign Classification: For each detected bounding box, the system extracts the region of interest corresponding to the traffic sign and passes it through a classification module. This module uses the YOLOv5 model's predictions to classify the traffic sign into one of several predefined categories, such as "stop," "yield," "speed limit," etc.</li>
+            <li>Decision Making: Based on the classifications of detected traffic signs, the system makes decisions, such as alerting the driver about speed limits, upcoming intersections, or other relevant information. This could involve triggering visual or auditory alerts within the vehicle or sending notifications to a central monitoring station.</li>
+            <li>Optimization and Fine-tuning: The system may undergo further optimization and fine-tuning to improve its accuracy, robustness, and real-time performance. This could involve techniques such as data augmentation, model distillation, or fine-tuning on additional datasets containing diverse traffic scenarios.</li>
+            <p>Overall, a traffic sign recognition system built using YOLOv5 combines the power of deep learning-based object detection with real-time processing capabilities to accurately detect and classify traffic signs in various environmental conditions.<p>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2 id="pricing">Pricing</h2>
+        <p>Contact us for pricing details and custom packages tailored to your needs.</p>
+        <a href="pricing.html">Click here for pricing information</a>
+        </section>
+
+    <footer>
+        <p>&copy; 2024 Traffic Sign Recognition System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
